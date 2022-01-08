@@ -1,0 +1,58 @@
+.header {
+    height:10%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 0;
+    width: 100%;
+    right: 0;
+    background-color: #002e69;
+}
+
+img.logo {
+    position:absolute;
+    top: 10%;
+    left: 2%;
+    width: 15%;
+    height: 80%
+}
+
+form.search {
+    position:absolute;
+    left:25%;
+    top:25%;
+    width:85%;
+    height:40%;
+}
+
+form.search input[type=text] {
+    padding: 10px;
+    font-size: 100%;
+    border: 1px solid grey;
+    float: left;
+    width: 52%;
+    background: white;
+}
+
+form.search button {
+    float:left;
+    width: 5%;
+    padding: 10px;
+    background: grey;
+    color: white;
+    font-size: 100%;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.search button:hover {
+    background: darkgray;
+}
+
+form.search::after {
+    content: "";
+    clear: both;
+    display: table;
+}

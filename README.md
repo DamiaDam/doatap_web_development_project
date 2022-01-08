@@ -28,3 +28,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Installation Notes:
 07/01/2022: Installed font-awesome using `npm install @fortawesome/fontawesome-free --save`
+08/01/2022: Installed bootstram using `ng add @ng-bootstrap/ng-bootstrap`
