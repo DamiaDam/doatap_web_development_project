@@ -1,19 +1,25 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>DoatapProject</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <title>DoatapProject</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
     <!-- Logo & Search -->
     <app-header></app-header>
-  
+
+    <!-- Navbar -->
+    <app-navbar></app-navbar>
+
+    <!-- TODO: Migrate main content to bootstrap components -->
     <!-- Main Page Wrapper -->
     <div>
-  
+
         <!-- Content -->
         <div class="content">
             <!-- Big Text Box with Background Image -->
@@ -21,24 +27,27 @@
                 <!-- text -->
                 <strong style="color:white;">
                     Από τις σπουδές σας στο εξωτερικό στη συνέχιση των σπουδών σας
-                και στην επαγγελματική σας εξέλιξη στην Ελλάδα
-                </strong>                
+                    και στην επαγγελματική σας εξέλιξη στην Ελλάδα
+                </strong>
             </div>
-  
+
             <!-- Big Clickable Box to request renewal -->
-                <div class="box-clickable" style="position:relative;">
-                    <!-- button with text -->
-                    <a class="box-link" href="#application"><h2>Θέλω να κάνω αίτηση αναγνώρισης του τίτλου μου</h2></a>
-                </div>
-                <!-- TODO: Fix clickable box (only text is clickable for now) -->
-            
+            <div class="box-clickable" style="position:relative;">
+                <!-- button with text -->
+                <a class="box-link" href="#application">
+                    <h2>Θέλω να κάνω αίτηση αναγνώρισης του τίτλου μου</h2>
+                </a>
+            </div>
+            <!-- TODO: Fix clickable box (only text is clickable for now) -->
+
         </div>
-  
+
         <!-- Announcements -->
         <div class="right_col">
             <h1> Ανακοινώσεις</h1>
         </div>
-  
+
     </div>
 </body>
+
 </html>
