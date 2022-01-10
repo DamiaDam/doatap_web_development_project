@@ -8,7 +8,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#">Οργανισμός</a>
+                <a class="nav-link" href="organization">Οργανισμός</a>
             </li>
             <li class="nav-item dropdown">
                 <div ngbDropdown class="d-inline-block">
@@ -28,18 +28,50 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Επικοινωνία</a>
+                <a class="nav-link" href="contact">Επικοινωνία</a>
             </li>
         </ul>
         <ul class="navbar-nav my-2 my-lg-0">
             <li class="nav-item">
+                <!-- TODO: Change to a button that (maybe by submitting form ?), changes the language -->
                 <a class="nav-link mr-sm-2" href="#1">(GR)</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link mr-sm-1" href="#2">Είσοδος</a>
+                <!-- <a class="nav-link mr-sm-1" href="#2">Είσοδος</a> -->
+
+
+                <div ngbDropdown class="d-inline-block">
+                    <button class="btn btn-outline-primary" id="dropdownForm1" ngbDropdownToggle>Είσοδος</button>
+                    <div ngbDropdownMenu aria-labelledby="dropdownForm1">
+                        <form class="px-4 py-3">
+                            <div class="form-group">
+                                <label for="exampleDropdownFormEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleDropdownFormEmail1"
+                                    placeholder="email@example.com" autocomplete="username">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleDropdownFormPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleDropdownFormPassword1"
+                                    placeholder="Password" autocomplete="current-password">
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                <label class="form-check-label" for="dropdownCheck">
+                                    Remember me
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Sign in</button>
+                        </form>
+                        <div class="dropdown-divider"></div>
+                        <button ngbDropdownItem>New around here? Sign up</button>
+                        <button ngbDropdownItem>Forgot password?</button>
+                    </div>
+                </div>
+
+
             </li>
             <li class="nav-item my-2 my-sm-0">
-                <a class="nav-link" href="#3">Εγγραφή</a>
+                <a class="nav-link" href="register">Εγγραφή</a>
             </li>
         </ul>
     </div>
