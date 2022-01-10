@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './components/header/header.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { MainContentComponent } from './components/main-content/main-content.component';
+import { SideAnnouncementsComponent } from './components/side-announcements/side-announcements.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    NavbarComponent
+    NavbarComponent,
+    MainContentComponent,
+    SideAnnouncementsComponent
   ],
   imports: [
     BrowserModule,
